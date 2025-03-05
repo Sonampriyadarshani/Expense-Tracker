@@ -1,0 +1,31 @@
+/* Make the layout take the full height of the page */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the main container expands fully */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height of full viewport */
+}
+
+/* Content takes up available space, pushing footer down */
+.layout-content {
+  flex: 1;
+  padding: 20px; /* Add spacing to avoid content touching edges */
+  overflow-y: auto; /* Ensure content scrolls instead of overflowing */
+}
+
+/* Footer styling */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  font-weight: bold;
+  position: relative; /* Keeps footer inside the layout */
+}

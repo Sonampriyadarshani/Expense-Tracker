@@ -1,0 +1,57 @@
+.header {
+    background-color: #3b82f6; /* Tailwind blue-500 */
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 90px;
+    max-width: 250px;
+    margin-right: 12px;
+  }
+  
+  .app-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .username {
+    font-weight: 500;
+  }
+  
+  .logout-button {
+    display: flex;
+    align-items: center;
+    background-color: #ef4444; /* Tailwind red-500 */
+    padding: 8px 16px;
+    border-radius: 9999px;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  .logout-button:hover {
+    background-color: #dc2626; /* Tailwind red-600 */
+  }
+  
+  .logout-icon {
+    margin-right: 8px;
+  }
+  
